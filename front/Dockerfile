@@ -1,3 +1,5 @@
-FROM node:14.15.3-alpine  
-WORKDIR /usr/src/app
+FROM node:16.0.0-alpine
 
+WORKDIR /app
+
+RUN npm install -g create-react-app

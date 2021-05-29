@@ -4,7 +4,7 @@ services:
   db:
     image: postgres
     volumes:
-      - ./tmp/db:/var/lib/postgresql/data
+      - db-store:/var/lib/postgresql/data
     environment:
       POSTGRES_PASSWORD: 'password'
   api:
@@ -22,9 +22,10 @@ services:
   front:
     build: ./front
     volumes:
-      - ./front:/usr/src/app
-    command: sh -c "cd app && yarn start"
+      - ./front:/app
+    command: ["yarn", "start"]
     ports:
       - 8000:3000
 
-
+volumes:
+  db-store:
