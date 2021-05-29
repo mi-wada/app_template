@@ -10,7 +10,6 @@ build-essential \
 postgresql-client \
 yarn
 
-RUN mkdir /app
 WORKDIR /app
 
 COPY Gemfile* /app/
