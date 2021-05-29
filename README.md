@@ -13,3 +13,6 @@
       pool: 5
    ```
 1. docker compose run api rake db:create
+
+## js package install
+ex: `docker compose run --rm front npm i axios`
