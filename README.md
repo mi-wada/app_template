@@ -12,4 +12,4 @@
       password: password
       pool: 5
    ```
-5. docker compose run api rake db:create
+1. docker compose run api rake db:create
