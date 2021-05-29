@@ -1,6 +1,6 @@
 1. docker compose build
 2. docker compose run --rm api rails new . --force --no-deps --database=postgresql --api
-3. docker compose run --rm front sh -c "create-react-app app"
+3. docker compose run --rm front sh -c "cd .. && rm -rf app && create-react-app app"
 4. write in 'api/config/database.yml'
    ```
    default: &default
