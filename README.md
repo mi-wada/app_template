@@ -1,7 +1,8 @@
+1. rm -rf .git
 1. docker compose build
-2. docker compose run --rm api rails new . --force --no-deps --database=postgresql --api
-3. docker compose run --rm front sh -c "cd .. && create-react-app app"
-4. replace 'api/config/database.yml' to
+1. docker compose run --rm api rails new . --force --no-deps --database=postgresql --api
+1. docker compose run --rm front sh -c "cd .. && create-react-app app"
+1. replace 'api/config/database.yml' to
    ```
    default: &default
       adapter: postgresql
