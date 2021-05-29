@@ -16,7 +16,7 @@ services:
       TZ: Asia/Tokyo
       RAILS_ENV: development
     ports:
-      - 3000:3000
+      - 8000:3000
     depends_on:
       - db
   front:
@@ -27,7 +27,7 @@ services:
       - ./front:/app
     command: ["yarn", "start"]
     ports:
-      - 8000:3000
+      - 8001:3000
 
 volumes:
   db-store:
