@@ -4,11 +4,11 @@
 4. write in 'api/config/database.yml'
    ```
    default: &default
-   adapter: postgresql 
-   encoding: unicode 
-   host: db 
-   username: postgres 
-   password: password 
+   adapter: postgresql
+   encoding: unicode
+   host: db
+   username: postgres
+   password: password
    pool: 5
    ```
 5. docker-compose run api rake db:create
