@@ -12,6 +12,7 @@
       password: password
       pool: 5
    ```
+1. docker compose build
 1. docker compose run api rake db:create
 
 ## js package install
